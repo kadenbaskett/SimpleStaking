@@ -45,10 +45,16 @@ $ forge snapshot
 $ anvil
 ```
 
+### Test Deploy
+
+```shell
+$ forge script DeployVaultScript --rpc-url "$RPC_LINK$API_KEY"
+```
+
 ### Deploy
 
 ```shell
-$ forge script script/Counter.s.sol:CounterScript --rpc-url <your_rpc_url> --private-key <your_private_key>
+$ forge script DeployVaultScript --rpc-url "$RPC_LINK$API_KEY"  --broadcast
 ```
 
 ### Cast
